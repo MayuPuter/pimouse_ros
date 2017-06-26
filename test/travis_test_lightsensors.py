@@ -31,7 +31,7 @@ class LightsensorTest(unittest.TestCase):
 	def test_get_value(self):
 		rospy.set_param('lightsensors_freq', 10)      # センサの値を取得する周期を 10Hz に
 		time.sleep(2)                                 # パラメータの反映を待つ
-		with open("/dev/rtlightsensor0", "w") as f   # ダミーの値をダミーのファイルに
+		with open("/dev/rtlightsensor0", "w") as f:   # ダミーの値をダミーのファイルに
 			f.write("-1 0 123 4321\n")
 
 		time.sleep(3)
