@@ -66,7 +66,7 @@ class MotorTest(unittest.TestCase):
 		with open("/dev/rtmotoren0", "r") as f:
 			data = f.readline()
 			self.assertEqual(data, "1\n", "wrong value in rtmotor0 at motor on")
-
+	
 
 if __name__ == "__main__":
 	rospy.init_node('travis_test_motors')
