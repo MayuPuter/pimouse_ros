@@ -26,7 +26,7 @@ class BuzzerTest(unittest.TestCase):
 			data = f.readline()
 			self.assertEqual(data, "1234\n", "value does not written to rtbuzzer0")
 	
-	def test_music(test):
+	def test_music(self):
 		goal = MusicGoal()
 		goal.freqs = [100, 200, 300, 0]
 		goal.durations = [2, 2, 2, 2]
